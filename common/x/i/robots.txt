@@ -1,0 +1,32 @@
+User-agent: Googlebot
+Disallow: 
+User-agent: Mediapartners-Google*
+Disallow: 
+User-agent: Googlebot-Image
+Disallow: 
+User-agent: Googlebot-Mobile
+Disallow: 
+User-agent: AdsBot-Google
+Disallow: 
+User-agent: Googlebot-News
+Disallow: 
+User-agent: Googlebot-Video
+Disallow: 
+User-agent: MSNBot
+Disallow: 
+User-agent: BingBot
+Disallow: 
+User-agent: Slurp
+Disallow: 
+User-agent: Twitterbot
+Disallow: 
+User-agent: facebookexternalhit
+Disallow: 
+
+
+# disallowed
+
+User-agent: *
+Disallow: /
+
+

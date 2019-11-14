@@ -1,0 +1,15 @@
+
+# Contact info submission
+
+url: sciensational.com/
+site_owner: Sciensational.com
+address1: 
+address2: 
+city: 
+state: 
+country: 
+postal_code: 
+phone_number: 
+display_email: sciensational@gmail.com
+site_name: Sciensational.com - Cool Science Facts, Stats
+site_description: Fun to read science facts and trivia!
