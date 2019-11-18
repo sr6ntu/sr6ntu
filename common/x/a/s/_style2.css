@@ -1,5 +1,14 @@
+#disq_gb p {
+  color: black !important;
+  font-weight: bold !important;
+}
+
+#disq_gb .media-GIPHY a img {
+  outline: solid 2px green !important;
+}
+
 /*hiding these for now*/
-#lb_3, #lb_4, #lb_5, #lb_6, #lb_7, #lb_8 {
+#lb_4, #lb_5, #lb_6, #lb_7, #lb_8 {
   display: none !important;
   visibility: hidden !important;
 }

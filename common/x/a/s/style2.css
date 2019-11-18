@@ -8,7 +8,7 @@
 }
 
 /*hiding these for now*/
-#lb_4, #lb_5, #lb_6, #lb_7, #lb_8 {
+#lb_5, #lb_6, #lb_7, #lb_8 {
   display: none !important;
   visibility: hidden !important;
 }
