@@ -290,7 +290,6 @@ function toTitleCase(str) {
 }
 ///// MODDED FOR AS_CD
 function asadRespId(prefix, postfix, divId, idTxt, slot, channel, orient, divWidth, divHeight) {}
-
 function __asadRespId(prefix, postfix, divId, idTxt, slot, channel, orient, divWidth, divHeight) {
 	// v10 - bugfix
 	if (!document.getElementById(divId)) {
@@ -332,8 +331,8 @@ function __asadRespId(prefix, postfix, divId, idTxt, slot, channel, orient, divW
 				'<span  class="ldng_16_3x"  style="display:block;max-width:' + divWidth + ';max-height:' + divHeight + '">' +
 				' <ins class="adsbygoogle adslot_' + idTxt + '" ' +
 				' style="display:block" ' +
-			////////////// gen new for sc!!!!
-			' data-ad-client="' + '\x63' + 'a' + '-\x70\x75b-' + (00 + 00 + 00) + '" ' +
+				////////////// gen new for sc!!!!
+				' data-ad-client="' + '\x63' + 'a' + '-\x70\x75b-' + (00 + 00 + 00) + '" ' +
 				' data-ad-slot="' + slot + '" ' +
 				' data-ad-format="' + a + '"></ins> ' +
 				'</span>' +
@@ -879,8 +878,10 @@ function addThisContainer() {
 }
 // 
 // 
+ 
 // 
 // 
+ 
 // 
 // 
 // -------------------------------------
@@ -892,6 +893,7 @@ function addThisContainer() {
 // CRC ad 8967036449, link 0744487852
 // 
 // 
+
 // 
 // ///////////////// / WWW. ///////////////// 
 // 
@@ -907,7 +909,8 @@ if (thsSiteTyp == "store") {
 	//// STORE CHANNELS
 	var ad_Channel = (ThsBlg_pg == 'mainpage') ? '' : '';
 	var lu_Channel = (ThsBlg_pg == 'mainpage') ? '' : '';
-	//// STORE BOTH MAINPAGE+ITEMPAGE LINKU ON DTP SIDEBAR
+	
+		//// STORE BOTH MAINPAGE+ITEMPAGE LINKU ON DTP SIDEBAR
 	var a = !detectmob() ? prependHTML('leftbar', '<div style="max-width:300px ; max-height:600px; min-height:100px; margin-bottom:10px;"><div id="as_sb1"></div></div>') : '';
 	//// not now
 	// asadRespId(
@@ -938,32 +941,18 @@ if (thsSiteTyp == "store") {
 	// 	"link"
 	// );
 	// 
-	////////
-	function amazonCleanUrl(strURL, strTLD, strAffId) {
-		// v3 
-		if (strURL.match("/(?!/e|st)../([A-Z0-9]{10})") === null) {
-			return strURL;
-		} else {
-			var strAsin = strURL.match("/(?!/e|st)../([A-Z0-9]{10})")[1] || strURL;
-			//    return "https://www.amazon." + strTLD + "/exec/obidos/ASIN/" + strAsin + "/" + strAffId; /// old style
-			return "https://www.amazon." + strTLD + "/dp/" + strAsin + "?tag=" + strAffId; /// new    
-		}
-	}
-	///// store jq /////
+	////  STORE JQ /// 
+	// --- /AS
 	$(function() {
+		// ========= mainpage =========
+		if (ThsBlg_pg == 'mainpage') {
+			//  
+		}
+		// ========= itempage =========
+		if (ThsBlg_pg == 'itempage') {
+			// 
+		}
 		// ========= ALL =========
-		// 
-		/// amz url clean
-		// *** CLEAN ALL AMZ API URLS to .com/dp/xxx?tag=yyy ***
-		$('.postbody a').each(function(index) {
-			var aurl = $(this).attr('href');
-			if (aurl.match(/(amazon\.|amzn\.)/igm)) {
-				var a = amazonCleanUrl(aurl, "com", thsBlg_amz.com);
-				$(this).attr('href', a);
-				// console.log(a);
-			}
-		});
-		//// amz url clean
 		// 
 		// 
 		$('.postbody h3 a').each(function(index) {
